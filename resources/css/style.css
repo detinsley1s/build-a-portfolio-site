@@ -106,7 +106,8 @@ a {
 
 .project-image {
   margin-bottom: 10px;
-  width: fit-content;
+/*  width: fit-content;*/
+  width: 310px;
   height: 207px;
 }
 
@@ -124,8 +125,12 @@ a {
 
 @media only screen and (max-width: 768px) {
   .project {
-    width: 364px;
     margin-right: 40px;
+  }
+  
+  .project,
+  .project-image {
+    width: 364px;
   }
 }
 
@@ -146,7 +151,8 @@ a {
 }
 
 @media only screen and (max-width: 410px) {
-  .project {
+  .project,
+  .project-image {
     width: 325px;
   }
   
