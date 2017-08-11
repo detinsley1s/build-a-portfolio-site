@@ -1,0 +1,168 @@
+/* Full-page */
+
+html,
+body {
+  font: 16px 'Ruda', sans-serif;
+  letter-spacing: 1px;
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.page-container {
+  max-width: 960px;
+  margin: 0 auto;
+  border: 1px solid black;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* Header */
+
+.header-info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 15px;
+  height: 63px;
+}
+
+.header-icon {
+  height: 63px;
+}
+
+.header-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.header-info *,
+.project * {
+  margin: 0;
+}
+
+.my-name {
+  font-size: 2.75rem;
+  margin: -6px 0 2px;
+}
+
+.my-title {
+  align-self: flex-end;
+}
+
+.header-divider {
+  height: 2px;
+  background-color: #7d97ad;
+}
+
+
+/* Hero image */
+
+.hero-image {
+  width: 100%;
+  height: 420px;
+  margin: 15px 0 5px;
+}
+
+
+/* Projects */
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.projects-title {
+  margin: 0 0 10px 15px;
+  font-size: 2rem;
+  color: #7d97ad;
+}
+
+.projects {
+  display: flex;
+  overflow-x: scroll;
+  height: 310px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 310px;
+  margin-right: 15px;
+}
+
+.project:last-child {
+  margin-right: 0;
+}
+
+.project-image {
+  margin-bottom: 10px;
+  width: fit-content;
+  height: 207px;
+}
+
+.project-title {
+  font-size: 1.45rem;
+  margin-bottom: 5px;
+}
+
+.project-url {
+  font-size: 0.9rem;
+}
+
+
+/* Media queries */
+
+@media only screen and (max-width: 768px) {
+  .project {
+    width: 364px;
+    margin-right: 40px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .projects-container {
+    align-items: center;
+  }
+  
+  .projects {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .project {
+    margin: 0 0 15px;
+    border: 1px solid black;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .project {
+    width: 325px;
+  }
+  
+  .header-info-container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 5px;
+    height: 150px;
+  }
+  
+  .my-name {
+    margin-top: 15px;
+  }
+  
+  .my-title {
+    align-self: center;
+  }
+}

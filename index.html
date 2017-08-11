@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Tinsley's Portfolio</title>
+    <link rel="shortcut icon" href="resources/images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Ruda" rel="stylesheet">
+    <link href="resources/css/normalize.css" rel="stylesheet">
+    <link href="resources/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="page-container">
+      <header>
+        <div class="header-info-container">
+          <img src="resources/images/udacity.svg" class="header-icon" alt="Udacity logo">
+          <div class="header-info">
+            <h1 class="my-name">DANIEL TINSLEY</h1>
+            <h3 class="my-title">FRONT-END NINJA</h3>
+          </div>
+        </div>
+      </header>
+      <hr class="header-divider">
+      <img src="resources/images/binary-ball.jpg" class="hero-image" alt="">
+      <section class="projects-container">
+        <h2 class="projects-title">Featured Work</h2>
+        <div class="projects">
+          <!-- Use <picture> tags to dynamically choose the proper image to download
+               and display depending upon the width of the screen -->
+          <div class="project">
+            <picture>
+              <source media="(max-width: 410px)"
+                      srcset="resources/images/chimpanzee_phone.jpg">
+              <source media="(max-width: 768px)"
+                      srcset="resources/images/chimpanzee_tablet.jpg">
+              <img src="resources/images/chimpanzee.jpg" alt="Chimpanzee" class="project-image">
+            </picture>
+            <a href="https://detinsley1s.github.io/animal-trading-cards/"
+               target="_blank" class="project-title">Animal Trading Cards</a>
+            <a href="https://github.com/detinsley1s/animal-trading-cards"
+               target="_blank" class="project-url">https://github.com/detinsley1s/animal-trading-cards</a>
+          </div>
+          <div class="project">
+            <picture>
+              <source media="(max-width: 410px)"
+                      srcset="resources/images/resume_phone.png">
+              <source media="(max-width: 768px)"
+                      srcset="resources/images/resume_tablet.png">
+              <img src="resources/images/resume.png" alt="Resumé" class="project-image">
+            </picture>
+            <p class="project-title">Interactive Resumé</p>
+            <p class="project-url">TBD</p>
+          </div>
+          <div class="project">
+            <picture>
+              <source media="(max-width: 410px)"
+                      srcset="resources/images/arcade-games_phone.png">
+              <source media="(max-width: 768px)"
+                      srcset="resources/images/arcade-games_tablet.png">
+              <img src="resources/images/arcade-games.png" alt="Arcade games" class="project-image">
+            </picture>
+            <p class="project-title">Classic Arcade Game Clone</p>
+            <p class="project-url">TBD</p>
+          </div>
+          <div class="project">
+            <picture>
+              <source media="(max-width: 410px)"
+                      srcset="resources/images/optimization_phone.jpg">
+              <source media="(max-width: 768px)"
+                      srcset="resources/images/optimization_tablet.jpg">
+              <img src="resources/images/optimization.jpg" alt="Rotating gears" class="project-image">
+            </picture>
+            <p class="project-title">Website Optimization</p>
+            <p class="project-url">TBD</p>
+          </div>
+          <div class="project">
+            <picture>
+              <source media="(max-width: 410px)"
+                      srcset="resources/images/neighborhood_phone.jpg">
+              <source media="(max-width: 768px)"
+                      srcset="resources/images/neighborhood_tablet.jpg">
+              <img src="resources/images/neighborhood.jpg" alt="Neighborhood" class="project-image">
+            </picture>
+            <p class="project-title">Neighborhood Map</p>
+            <p class="project-url">TBD</p>
+          </div>
+          <div class="project">
+            <picture>
+              <source media="(max-width: 410px)"
+                      srcset="resources/images/rss_phone.png">
+              <source media="(max-width: 768px)"
+                      srcset="resources/images/rss_tablet.png">
+              <img src="resources/images/rss.png" alt="RSS symbol" class="project-image">
+            </picture>
+            <p class="project-title">Feed Reader Testing</p>
+            <p class="project-url">TBD</p>
+          </div>
+          <div class="project">
+            <picture>
+              <source media="(max-width: 410px)"
+                      srcset="resources/images/medical_phone.jpg">
+              <source media="(max-width: 768px)"
+                      srcset="resources/images/medical_tablet.jpg">
+              <img src="resources/images/medical.jpg" alt="Stethoscope and chart" class="project-image">
+            </picture>
+            <p class="project-title">Health Tracker</p>
+            <p class="project-url">TBD</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
