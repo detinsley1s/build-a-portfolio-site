@@ -89,7 +89,7 @@ a {
 .projects {
   display: flex;
   overflow-x: scroll;
-  height: 310px;
+  height: 312px;
 }
 
 .project {
