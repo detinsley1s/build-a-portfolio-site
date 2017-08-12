@@ -57,6 +57,10 @@ a {
   align-self: flex-end;
 }
 
+.hr-rule {
+  border-bottom: 3px solid #7d97ad;
+}
+
 
 /* Hero image */
 
